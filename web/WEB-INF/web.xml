@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AdminLoginConf</servlet-name>
+        <servlet-class>admin.AdminLoginConf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterConf</servlet-name>
+        <servlet-class>RegisterConf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserLoginConf</servlet-name>
+        <servlet-class>UserLoginConf</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginConf</servlet-name>
+        <url-pattern>/AdminLoginConf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterConf</servlet-name>
+        <url-pattern>/RegisterConf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserLoginConf</servlet-name>
+        <url-pattern>/UserLoginConf</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
